@@ -3,6 +3,8 @@
 <head>
     <title>Alert Examples</title>
     <meta charset="utf-8">
+    <script src="events.js"></script>
+    <style></style>
 </head>
 <body>
     <nav>
@@ -11,11 +13,10 @@
         </header>
     </nav>
     <main>
-        <label for="Target">Target:
-            <input type="text">
-        </label>
+        <p>Target:</p>
+        <p id="TargetNumberTarget"></p>
         <p>Numbers</p>
-        <p id="numbersTarget"></p>
+        <p id="numbersTarget" onclick="window.print(getRandomTargetInteger)"></p>
         <button class="radio" type="radio">Exact Solution</button>
         <button class="radio" type="radio">All Lengths</button>
         <button class="radio" type="radio">Knapsack (+ only)</button>
